@@ -1,0 +1,231 @@
+@import 'fonts'
+
+border-radius()
+  -webkit-border-radius: arguments
+  -moz-border-radius: arguments
+  border-radius: arguments
+
+
+blue-color = #3f6fb6
+black-color = #000000
+bold-font = 'Myriad Pro Bold'
+basic-font = 'Myriad Pro Regular'
+semiext-font = 'Myriad Pro LightSemiExt'
+
+body
+    background: #333
+
+.container
+    margin: 0 auto
+    width: 980px
+    min-width: 980px
+    padding: 30px   
+    background: #fff
+
+.left-side
+    display: block
+    width: 400px
+    padding: 20px
+
+.right-side
+    display: block
+    width: 550px
+    padding: 20px
+
+// PHOTO, NAME, SURNAME
+.logo
+    display: flex
+    flex-direction: column
+    padding: 5px 0 40px 0
+    .logo-image
+        width: 150px
+        height: 150px
+        margin-left: auto
+        margin-right: auto
+        border-radius(75px)
+        border: 1px solid blue-color
+        background-color: #fff
+        overflow: hidden
+        .inner-circle
+            width: 128px
+            height: 128px
+            margin: 10px
+            border-radius(64px)
+            overflow: hidden
+            img 
+                width:128px
+    .logo-name
+        display: block
+        text-align: center
+        font-family: semiext-font
+        font-size: 25.08pt
+        text-transform: uppercase
+        padding: 10px 0 0 0
+    .logo-surname
+        display: block
+        text-align: center
+        font-family: bold-font
+        font-size: 29.63pt
+        text-transform: uppercase
+        margin-top: -20px
+    .logo-vacancy
+        display: block
+        text-align: center
+        font-family: bold-font
+        font-size: 11.99pt
+        text-transform: uppercase
+        margin-top: -10px
+
+// BEGIN --- ОСНОВА ДЛЯ БЛОКОВ
+.item 
+    display: flex
+    flex-direction: column
+    width: 100%
+    height: auto
+    padding: 5px 15px
+    .item-title
+        display: flex
+        width: 100%
+        height: 50px
+        float: left
+        .item-title-image
+            width: 50px
+            height: 50px
+            float: left
+            img 
+                width: inherit
+                height: inherit
+        .item-title-text
+            font-family: bold-font
+            text-transform: uppercase
+            color: blue-color
+            font-size: 19.75pt
+            padding-top: 5px
+            margin-left: 10px
+            float: left
+        .item-title-space
+            width: 100%
+            .item-title-space-line
+                display: block
+                margin: 22px 10px 0 10px
+                height: 4px
+                background-color: blue-color 
+    .item-content
+        display: block
+        width: 100%
+        padding-top: 10px
+
+// END --- БАЗА ДЛЯ БЛОКОВ 
+
+//  КОНТЕНТ PROFILE
+.profile
+    p
+        font-family: basic-font
+        font-size: 7.41pt
+        span 
+            font-family: bold-font
+
+// КОНТЕНТ CONTACT
+.contact
+    .contact-item
+        display: flex
+        font-size: 9.88pt
+        padding: 10px 0
+        .contact-item-title
+            width: 35%
+            font-family: bold-font
+            color: blue-color
+            text-transform: uppercase
+        .contact-item-content
+            width: 60%
+
+// КОНТЕНТ SKILLS
+.skills
+    .skills-item
+        display: flex
+        flex-direction: column
+        padding: 0px 35px
+        .skills-item-title
+            display: block
+            width: 100%
+            text-align: center
+            font-family: basic-font
+            color: black-color
+            font-size: 12.35pt
+            text-transform: uppercase
+        .skills-item-content
+            display: block
+            margin-left: auto;
+            margin-right: auto;
+            img 
+                width: 10pt
+                height 10pt
+                margin: 0 1px
+
+// КОНТЕНТ EDUCATION
+.education
+    padding: 15px 10px 0 10px
+    .education-item
+        background: url('../images/list-image.png') no-repeat 0 5px
+        padding-left: 25px
+        .education-item-spec
+            font-family: bold-font
+            font-size: 12.35pt
+            color: blue-color
+            text-transform: uppercase
+            span 
+                color: black-color
+                text-transform: none
+        .education-item-name
+            font-family: bold-font
+            font-size: 12.35pt
+            color: black-color
+            text-transform: uppercase
+            margin-top: -5px
+        .education-item-text
+            font-family: basic-font
+            font-size: 7.41pt
+            color: black-color
+
+// КОНТЕНТ EDUCATION
+.experience
+     padding: 5px 10px 0 10px
+    .experience-item
+        background: url('../images/list-image.png') no-repeat 0 5px
+        padding-left: 25px
+        .experience-item-name
+            font-family: bold-font
+            font-size: 12.35pt
+            color: black-color
+            text-transform: uppercase
+            span 
+                color: black-color
+                text-transform: none
+        .experience-item-job
+            font-family: bold-font
+            font-size: 12.35pt
+            color: black-color
+            text-transform: uppercase
+            margin-top: -5px
+        .experience-item-text
+            font-family: basic-font
+            font-size: 7.41pt
+            color: black-color
+
+// КОНТЕНТ SOFTWARE
+.software
+    .software-item
+        display: block
+        width: 50%
+        padding: 0px 10px
+        float: left
+        .software-item-title
+            font-size: 12.35pt
+            text-transform: uppercase
+            padding: 5px 0
+        .software-item-progress
+            border-radius(0px)
+            .progress-bar
+                background-color: blue-color
+                border-radius(0px)
+                
